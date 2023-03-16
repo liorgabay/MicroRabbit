@@ -25,7 +25,7 @@ namespace MicroRabbit.Infra.IoC
             services.AddTransient<IEventBus, RabbitMQBus>();
 
             //Domain Banking Commands
-            services.AddTransient<IRequestHandler<CreateReansferCommand, bool>, TransferCommandHandler>();
+            services.AddTransient<IRequestHandler<CreateTransferCommand, bool>, TransferCommandHandler>();
 
             //Application Services
             services.AddTransient<IAccountService, AccountService>();

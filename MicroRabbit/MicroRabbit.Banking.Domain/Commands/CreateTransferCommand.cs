@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MicroRabbit.Banking.Domain.Commands
 {
-    public class CreateReansferCommand : TransferCommand
+    public class CreateTransferCommand : TransferCommand
     {
-        public CreateReansferCommand(int from, int to, decimal amount) 
+        public CreateTransferCommand(int from, int to, decimal amount) 
         {
             From = from;
             To = to;
